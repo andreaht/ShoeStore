@@ -14,24 +14,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            tools:context="com.udacity.shoestore.WelcomeFragment">
+            tools:context="com.udacity.shoestore.InstructionFragment">
 
             <TextView
-                android:id="@+id/textView_welcome"
+                android:id="@+id/textView_instruction"
                 style="@style/whiteBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/welcome"
+                android:text="@string/instruction"
                 android:textColor="#039BE5"
                 android:textSize="34sp" />
 
             <TextView
-                android:id="@+id/textView_welcome_description"
+                android:id="@+id/textView_instruction_description"
                 style="@style/whiteBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="32dp"
-                android:text="@string/welcome_film"
+                android:text="@string/buying_shoes"
                 android:textColor="#039BE5"
                 android:textSize="14sp" />
 

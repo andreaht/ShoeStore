@@ -6,4 +6,32 @@
     <string name="login">Login</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Welcome!</string>
+    <string name="welcome_film">Originally, shoes were made one at a time by hand, often by groups
+        of shoemakers, or cobblers (also known as cordwainers). \n In the 18th century,
+        dozens or even hundreds of masters, journeymen and apprentices (both men and women)
+        would work together in a shop, dividing up the work into individual tasks. \n
+        A customer could come into a shop, be individually measured, and return to pick up their
+        new shoes in as little as a day. Everyone needed shoes, and the median price for a pair
+        was about one day’s wages for an average journeyman.  \n
+        The shoemaking trade flourished in the eighteenth and early nineteenth centuries but began
+        to be affected by industrialization in the later nineteenth century. \n
+        Traditional handicraft shoemaking has now been largely superseded in volume of shoes
+        produced by industrial mass production of footwear, but not necessarily in quality,
+        attention to detail, or craftsmanship. Today, most shoes are made on a volume basis,
+        rather than a craft basis. \n
+        A pair of \"bespoke\" shoes, made in 2020 according to traditional practices,
+        can be sold for thousands of dollars. \n
+        Shoemakers may produce a range of footwear items,
+        including shoes, boots, sandals, clogs and moccasins. \n
+        Such items are generally made of leather, wood, rubber, plastic, jute or other plant material,
+        and often consist of multiple parts for better durability of the sole,
+        stitched to a leather upper part. \n
+        Trades that engage in shoemaking have included the cordwainer\'s and cobbler\'s trades.
+        The term cobbler was originally used pejoratively to indicate that someone did not know
+        their craft; in the 18th century it became a term for those who repaired shoes but
+        did not know enough to make them.</string>
+    <string name="next">next</string>
+    <string name="instruction">Instruction</string>
+    <string name="buying_shoes">The shoes should conform to the shape of your feet, and not the other way around. Consequently, a new shoe should fit your foot perfectly in terms of length and width. Most importantly, your toes need sufficient space (they move up to 0.5 cm due to the roll-through movement when walking). That’s not the case for the heels, which must be firmly supported. Having firmly supported heels is one of the most important factors to ensure a perfectly fitting shoe.</string>
 </resources>
