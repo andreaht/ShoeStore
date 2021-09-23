@@ -36,4 +36,10 @@
     <string name="buying_shoes">The shoes should conform to the shape of your feet, and not the other way around. Consequently, a new shoe should fit your foot perfectly in terms of length and width. Most importantly, your toes need sufficient space (they move up to 0.5 cm due to the roll-through movement when walking). That’s not the case for the heels, which must be firmly supported. Having firmly supported heels is one of the most important factors to ensure a perfectly fitting shoe.</string>
     <string name="add_shoe">add_shoe</string>
     <string name="logout">Logout</string>
+    <string name="shoe_name">Name:</string>
+    <string name="shoe_company">Company:</string>
+    <string name="shoe_size">Size:</string>
+    <string name="shoe_description">Description:</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
 </resources>

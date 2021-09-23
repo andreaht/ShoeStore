@@ -8,14 +8,12 @@ import timber.log.Timber
 
 class ShoeListViewModel: ViewModel() {
 
-
-
-    // The current word
-    private val _shoeList = MutableLiveData<List<Shoe>>()
-    val shoeList: LiveData<List<Shoe>>
+    private val _shoeList = MutableLiveData<MutableList<Shoe>>()
+    val shoeList: LiveData<MutableList<Shoe>>
         get() = _shoeList
 
     init{
+        _shoeList.value = mutableListOf()
         Timber.i("ShoeListViewModel created!")
     }
 
