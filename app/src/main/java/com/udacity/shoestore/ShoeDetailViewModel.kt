@@ -1,13 +1,12 @@
 package com.udacity.shoestore
 
-import androidx.databinding.Bindable
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 import com.udacity.shoestore.models.Shoe
-import com.udacity.shoestore.util.ObservableViewModel
 import timber.log.Timber
 
-class ShoeDetailViewModel : ObservableViewModel() {
+class ShoeDetailViewModel : ViewModel() {
 
     private val _shoe = MutableLiveData<Shoe>()
     val shoe: LiveData<Shoe>

@@ -37,6 +37,11 @@ class ShoeDetailFragment : Fragment() {
         // Get the viewmodel
         viewModel = ViewModelProvider(this).get(ShoeDetailViewModel::class.java)
 
+        //binding the layout to the viewModel
+        binding.viewmodel = viewModel
+        //making binding observe live data
+        binding.lifecycleOwner = this
+
 
         binding.cancelButton.setOnClickListener { view: View ->
             view.findNavController()
@@ -44,11 +49,6 @@ class ShoeDetailFragment : Fragment() {
         }
 
         binding.saveButton.setOnClickListener { view: View ->
-
-            viewModel.shoe.value?.name = binding.editTextShoeName.text.toString()
-            viewModel.shoe.value?.size = binding.editTextShoeSize.text.parseToDouble()
-            viewModel.shoe.value?.company = binding.editTextShoeCompany.text.toString()
-            viewModel.shoe.value?.description = binding.editTextShoeDescription.text.toString()
 
             Timber.i("shoe: %s", viewModel.shoe.value)
             view.findNavController().navigate(
