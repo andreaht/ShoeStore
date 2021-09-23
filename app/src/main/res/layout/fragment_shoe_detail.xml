@@ -3,11 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.udacity.shoestore.ShoeDetailViewModel" />
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/login_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.udacity.shoestore.ShoeDetailFragment">
+        tools:context=".ShoeDetailFragment">
 
 
         <TextView
@@ -71,6 +78,7 @@
             android:layout_marginEnd="16dp"
             android:ems="10"
             android:inputType="textEmailAddress"
+            android:text="@={viewmodel.shoe.name}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/shoe_name_label"
             app:layout_constraintTop_toTopOf="parent" />
@@ -84,6 +92,7 @@
             android:layout_marginEnd="16dp"
             android:ems="10"
             android:inputType="text"
+            android:text="@={viewmodel.shoe.company}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/shoe_company_label"
             app:layout_constraintTop_toBottomOf="@+id/editTextShoeName" />
@@ -97,6 +106,7 @@
             android:layout_marginEnd="16dp"
             android:ems="10"
             android:inputType="numberDecimal"
+            android:text="@={`` + viewmodel.shoe.size}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/shoe_size_label"
             app:layout_constraintTop_toBottomOf="@+id/editTextShoeCompany" />
@@ -110,6 +120,7 @@
             android:layout_marginEnd="16dp"
             android:ems="10"
             android:inputType="text"
+            android:text="@={viewmodel.shoe.description}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/shoe_description_label"
             app:layout_constraintTop_toBottomOf="@+id/editTextShoeSize" />

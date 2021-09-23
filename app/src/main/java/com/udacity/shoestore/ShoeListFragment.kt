@@ -41,6 +41,10 @@ class ShoeListFragment : Fragment() {
         }
 
         viewModel.shoeList.observe(viewLifecycleOwner, Observer { shoes ->
+            val args = ShoeListFragmentArgs.fromBundle(requireArguments())
+            if (args.shoe != null){
+                viewModel.shoeList.value?.add(args.shoe as Shoe)
+            }
             showShoes(shoes)
         })
 
@@ -56,14 +60,5 @@ class ShoeListFragment : Fragment() {
                 binding.layoutShoelist.addView(showTextView)
             }
         }
-    }
-
-    override fun onResume() {
-        super.onResume()
-        val args = ShoeListFragmentArgs.fromBundle(requireArguments())
-        if (args.shoe != null){
-            viewModel.shoeList.value?.add(args.shoe as Shoe)
-        }
-        showShoes(viewModel.shoeList.value)
     }
 }

@@ -14,12 +14,12 @@ class ShoeListViewModel: ViewModel() {
 
     init{
         _shoeList.value = mutableListOf()
-        Timber.i("ShoeListViewModel created!")
+        Timber.i("created!")
     }
 
     override fun onCleared() {
         super.onCleared()
-        Timber.i("ShoeListViewModel destroyed!")
+        Timber.i("destroyed!")
     }
 
 }
